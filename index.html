@@ -3,30 +3,17 @@
 	<title>Marco Jonker</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<style type="text/css">
 		*, *:before, *:after {
 			box-sizing:border-box;
 			margin:0;
 			padding: 0;
 		}
-		@font-face {
-		  font-family: 'marcothickfont';
-		  src: 'Raleway';
-		}
-		@font-face {
-		  font-family: 'marcoregularfont';
-		  src: 'Raleway';
-
-		}
-		@font-face {
-		  font-family: 'marcoregularfontbold';
-		  src: 'Raleway';
-
-		}
 		html, body {
 			padding: 0;
 			margin:0;
-			color: #606573;
 			font-family: 'marcoregularfont';
 		}
 		.container {
@@ -45,12 +32,14 @@
 			background-position: center;
 		}
 		.content {
-			background: white;
+			background: #f0f1ec;
 			padding: 40px;
 		}
 		.contact {
 			cursor: pointer;
 			position: absolute;
+			width: 100%;
+			padding: 0 80px 0 0
 		}
 		.contact a {
 			padding:0px 14px;
@@ -65,6 +54,9 @@
 			font-size: 10px;
 			font-family: 'marcoregularfontbold', sans-serif;
 			transition:all .3s ease-in-out;
+		}
+		.contact a:nth-of-type(2) {
+			float: right;
 		}
 		.contact a:hover {
 			border:1px solid #181818;
@@ -86,26 +78,42 @@
 			vertical-align: middle;
 			width: 420px;
 		}
+		.copy center {
+			text-align: center;
+		}
 		.copy h1 {
 			text-align: center;
-			letter-spacing: 3px;
 			color:black;
 			line-height: 46px;
 			margin-bottom: 20px;
 			font-size: 35px;
 			text-transform: uppercase;
-			font-family: 'Raleway', Helvetica
+			font-family: 'Montserrat', sans-serif;
+			font-weight:thin;
 		}
 		.copy span {
-			letter-spacing: -4px;
+			letter-spacing: -5px;
 		}
 		.copy h2 {
-			color: #606574;
+			color: #000;
 			font-weight: normal;
-			font-size: 17px;
+			font-size: 13px;
 			text-align: justify;
 			line-height: 24px;
 			margin-bottom: 20px;
+			font-family: 'Montserrat'
+		}
+		.copy h2 span {
+			color: #ff4500;
+			letter-spacing: normal;
+		}
+		.copy h2 a {
+			color: #00baff;
+			font-size: 13px;
+		}
+		.copy h2 a strong {
+			position: relative;
+			top: 1px;
 		}
 		.copy a {
 			margin-top: 10px;
@@ -180,17 +188,16 @@
 			<div class="copy-container">
 				<div class="contact">
 					<a href="mailto:marco.a.jonker@gmail.com">contact</a>
-					<a href="" target="_blank">view my resume</a>
-
 				</div>
 				<div class="copy">
 					<h1>product manager<br><span>-----------------------</span></h1>
-					<h2>My name is Marco Jonker. I'm an American/Canadian Product Manager living in Palo Alto, fascinated by technology innovations, the human experience and solving problems.
+					<h2>My name is <span>Marco Jonker.</span> I'm an American/Canadian <span>Product Manager</span> living in Palo Alto, fascinated by technology innovations, the human experience and <span>solving problems.</span>
 						My non-traditional path has given me the ability to solve problems from multifaceted perspectives.
-						<br><br><strong style="color: black"><center>engineering. user experience. business. design.<br>
-						<span>---------------------------------------------------------------------------------------</span><br>
-					</center></strong><br>
-					I channel diverse ideas and creative energies towards a unified vision by fashioning innovative solutions - where, at all levels, beauty and functionality fuse.</h2>
+					</h2>
+					<center><h2><b>Engineering. User experience. Business. Design.</b></h2></center>
+					<h2>
+					I channel <span>diverse ideas and creative energies</span> towards a unified vision by fashioning innovative solutions - where, at all levels, beauty and functionality fuse.</h2>
+					<h2><a href="">View My Resume <strong>></strong></a></h2>
 					<div class="contact">
 					</div>
 				</div>
